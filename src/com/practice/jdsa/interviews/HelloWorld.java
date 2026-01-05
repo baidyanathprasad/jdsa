@@ -1,4 +1,4 @@
-package com.jdsa.prep.interviews;
+package com.practice.jdsa.interviews;
 
 import java.util.Collections;
 import java.util.PriorityQueue;

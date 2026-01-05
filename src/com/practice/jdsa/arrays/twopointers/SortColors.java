@@ -1,4 +1,4 @@
-package com.jdsa.prep.arrays.twopointers;
+package com.practice.jdsa.arrays.twopointers;
 
 public class SortColors {
     public static int[] sortColors (int[] colors) {

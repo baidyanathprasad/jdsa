@@ -1,4 +1,4 @@
-package com.jdsa.prep.arrays.merge_intervals;
+package com.practice.jdsa.arrays.merge_intervals;
 
 import java.util.HashMap;
 

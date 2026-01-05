@@ -1,4 +1,4 @@
-package com.jdsa.prep.arrays.twopointers;
+package com.practice.jdsa.arrays.twopointers;
 
 import java.util.ArrayList;
 import java.util.List;

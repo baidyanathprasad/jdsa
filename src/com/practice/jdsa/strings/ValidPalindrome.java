@@ -1,4 +1,4 @@
-package com.jdsa.prep.strings;
+package com.practice.jdsa.strings;
 
 /**
  * A valid palindrome is a string that reads the same backward as forward,
