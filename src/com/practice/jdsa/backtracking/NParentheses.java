@@ -1,5 +1,8 @@
 package com.practice.jdsa.backtracking;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Generate all combinations of n pairs of balanced parentheses.
  * Example:
@@ -19,7 +22,14 @@ public class NParentheses {
     }
 
     public static void generateParenthesis(int n) {
-        backtrack("", 0, 0, n); // create a basic rule parameters
+        List<String> result = new ArrayList<>();
+
+        // create a basic rule parameters
+        backtrack("", 0, 0, n, result);
+
+        for (String item : result) {
+            System.out.println(item);
+        }
     }
 
     /**
@@ -28,17 +38,17 @@ public class NParentheses {
      * add open: if the number of open parentheses is less than N, add an open parenthesis
      * add closed: if the number of close parentheses is less than open, add a close parenthesis
      */
-    private static void backtrack(String current, int open, int close, int N) {
+    private static void backtrack(String current, int open, int close, int N, List<String> result) {
         if (current.length() == N * 2) {
-            System.out.println(current);
+            result.add(current);
             return;
         }
 
         if (open < N) {
-            backtrack(current + "(", open + 1, close, N);
+            backtrack(current + "(", open + 1, close, N, result);
         }
         if (close < open) {
-            backtrack(current + ")", open, close + 1, N);
+            backtrack(current + ")", open, close + 1, N, result);
         }
     }
 }
