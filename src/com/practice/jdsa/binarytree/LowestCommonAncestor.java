@@ -20,7 +20,6 @@ public class LowestCommonAncestor {
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || root == p || root == q) {
-            // System.out.println("Returning Root: " + (root != null ? root.data : "null"));
             return root;
         }
 
@@ -31,11 +30,10 @@ public class LowestCommonAncestor {
         TreeNode right = lowestCommonAncestor(root.right, p, q);
 
         if (left != null && right != null) {
-            // System.out.println("Lowest Common Ancestor Found at Root: " + root.data);
             return root;
         }
 
-        // System.out.println("Returning Node: " + (left != null ? left.data : (right != null ? right.data : "null")) + " for Root: " + root.data);
+        // handle the one node is itself ancestor case
         return left != null ? left : right;
     }
 
