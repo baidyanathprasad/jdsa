@@ -8,16 +8,6 @@ package com.practice.jdsa.binarytree;
  */
 public class LowestCommonAncestor {
 
-    public static class TreeNode {
-        int data;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int data) {
-            this.data = data;
-        }
-    }
-
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || root == p || root == q) {
             return root;

@@ -14,15 +14,7 @@ import java.util.Deque;
  */
 public class MaximumWidth {
 
-    public static class TreeNode {
-        int data;
-        TreeNode left;
-        TreeNode right;
 
-        TreeNode(int data) {
-            this.data = data;
-        }
-    }
 
     public static class Pair<U, V> {
         public U first;
