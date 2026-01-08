@@ -1,5 +1,7 @@
 package com.practice.jdsa.binarytree;
 
+import com.practice.jdsa.utils.Pair;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -13,26 +15,6 @@ import java.util.Deque;
  * between the end-nodes are also counted into the length calculation.
  */
 public class MaximumWidth {
-
-
-
-    public static class Pair<U, V> {
-        public U first;
-        public V second;
-
-        public Pair(U first, V second) {
-            this.first = first;
-            this.second = second;
-        }
-
-        public U getFirst() {
-            return first;
-        }
-
-        public V getSecond() {
-            return second;
-        }
-    }
 
     public int widthOfBinaryTree(TreeNode root) {
         if (root == null) {
